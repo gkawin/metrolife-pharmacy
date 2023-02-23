@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Metrolife Phamarcy</title>
+    <style>
+      .hero {
+        background-image: url("./dist/assets/hero1.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        box-shadow: inset 0 0 0 99999px rgba(0, 0, 0, 0.5);
+      }
+      .bg-primary {
+        background-color: rgba(12, 29, 92, 1);
+      }
+      .text-primary {
+        color: rgba(12, 29, 92, 1);
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Hero -->
+    <main id="hero" class="hero">
+      <div class="relative px-6 lg:px-8">
+        <div class="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
+          <div class="text-center">
+            <h1
+              class="text-4xl font-bold tracking-tight text-white sm:text-6xl"
+            >
+              Welcome to Metrolife Pharmacy
+            </h1>
+            <p class="mt-6 text-lg leading-8 text-white">
+              Pharmacist can be an active partner in your health. Your
+              pharmacist speaks your language & honours your values.
+            </p>
+            <div class="mt-10 flex items-center justify-center gap-x-6">
+              <a
+                href="#"
+                class="rounded-md bg-primary p-4 text-sm font-light text-white shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 hover:-translate-y-1 duration-200 ease-in-out active:translate-y-1"
+              >
+                Schedule with doctor available by virtual appointment
+              </a>
+              <a href="#" class="text-sm font-light leading-6 text-white">
+                Learn more <span aria-hidden="true">→</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- End Hero -->
+    <!-- Products & services section -->
+    <section id="our-services">
+      <div class="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
+        <h2 class="text-4xl text-center p-4">Products & Services</h2>
+        <div class="grid grid-cols-4 gap-2 md:gap-4 text-center py-4">
+          <div>
+            <p>Personalized Service, No Wait.</p>
+          </div>
+          <div>
+            <p>COVID-19 & Other Vaccinatios</p>
+          </div>
+          <div>
+            <p>Blister Packaging & Medication Reviews</p>
+          </div>
+          <div>
+            <p>Diabets, Blood Pressure Care & Supplies</p>
+          </div>
+          <div>
+            <p>Vitamins supplements & Herbal products</p>
+          </div>
+          <div>
+            <p>Home health care supplies & Devices</p>
+          </div>
+          <div>
+            <p>Able to arrange items that you may need</p>
+          </div>
+          <div>
+            <p>Delivery available, We accept most insurance plans</p>
+          </div>
+        </div>
+        <div>
+          <p class="text-center text-xl pt-4">
+            and much more...speak with your pharmacist
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- End Products & services section -->
+    <!-- Start Doctor Appointment form -->
+    <section
+      id="doctor-appointment"
+      class="bg-primary text-white relative overflow-hidden"
+    >
+      <div class="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
+        <h2
+          class="py-6 text-center text-4xl md:hidden text-white font-semibold"
+        >
+          Doctor Appointment
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 md:gap-x-8">
+          <figure class="hidden md:block">
+            <img
+              src="./dist/assets/doctor-appointment.JPG"
+              alt=""
+              class="w-full"
+            />
+          </figure>
+
+          <form class="px-4">
+            <div class="relative z-0 w-full mb-6 group">
+              <input
+                type="email"
+                name="floating_email"
+                id="floating_email"
+                class="block py-2.5 px-0 w-full text-sm text-white bg-transparent border-0 border-b-2 border-white focus:border-gray-400 appearance-none focus:outline-none focus:ring-0 peer"
+                placeholder=" "
+                required
+              />
+              <label
+                for="floating_email"
+                class="peer-focus:font-medium absolute text-sm text-white peer-focus:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+              >
+                Email address
+              </label>
+            </div>
+
+            <div class="grid md:grid-cols-2 md:gap-6">
+              <div class="relative z-0 w-full mb-6 group">
+                <input
+                  type="text"
+                  name="floating_first_name"
+                  id="floating_first_name"
+                  class="block py-2.5 px-0 w-full text-sm text-white bg-transparent border-0 border-b-2 border-white focus:border-gray-400 appearance-none focus:outline-none focus:ring-0 peer"
+                  placeholder=" "
+                  required
+                />
+                <label
+                  for="floating_first_name"
+                  class="peer-focus:font-medium absolute text-sm text-white peer-focus:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+                >
+                  First name
+                </label>
+              </div>
+              <div class="relative z-0 w-full mb-6 group">
+                <input
+                  type="text"
+                  name="floating_last_name"
+                  id="floating_last_name"
+                  class="block py-2.5 px-0 w-full text-sm text-white bg-transparent border-0 border-b-2 border-white focus:border-gray-400 appearance-none focus:outline-none focus:ring-0 peer"
+                  placeholder=" "
+                  required
+                />
+                <label
+                  for="floating_last_name"
+                  class="peer-focus:font-medium absolute text-sm text-white peer-focus:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+                >
+                  Last name
+                </label>
+              </div>
+            </div>
+            <div class="relative z-0 w-full mb-6 group">
+              <div class="relative z-0 w-full mb-6 group">
+                <input
+                  type="text"
+                  inputmode="numeric"
+                  pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                  name="floating_phone"
+                  id="floating_phone"
+                  class="block py-2.5 px-0 w-full text-sm text-white bg-transparent border-0 border-b-2 border-white focus:border-gray-400 appearance-none focus:outline-none focus:ring-0 peer"
+                  placeholder=" "
+                  required
+                />
+                <label
+                  for="floating_phone"
+                  class="peer-focus:font-medium absolute text-sm text-white peer-focus:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+                >
+                  Phone number
+                </label>
+              </div>
+            </div>
+            <div class="relative z-0 w-full mb-6 group">
+              <label for="message" class="block mb-2 text-sm text-white">
+                Let us know what you need
+              </label>
+              <textarea
+                id="message"
+                rows="4"
+                class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500"
+                placeholder="Write your thoughts here..."
+              ></textarea>
+            </div>
+            <button
+              type="submit"
+              class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center"
+            >
+              Make Appointment
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+    <!-- End Doctor Appointment form -->
+    <!-- Start Contact Us -->
+    <section id="contact-up" class="relative overflow-hidden">
+      <div class="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
+        <h2 class="text-4xl text-center p-4">Contact Us</h2>
+      </div>
+    </section>
+    <!-- End Contact Us -->
+    <!-- Start Footer -->
+    <footer></footer>
+    <!-- End Footer -->
+  </body>
+</html>

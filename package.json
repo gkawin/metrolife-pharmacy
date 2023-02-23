@@ -1,0 +1,27 @@
+{
+  "name": "metrolife-pharmacy",
+  "version": "1.0.0",
+  "description": "metrolife-pharmacy",
+  "main": "tailwind.config.js",
+  "scripts": {
+    "build": "postcss styles.css -o dist/styles.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gkawin/metrolife-pharmacy.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gkawin/metrolife-pharmacy/issues"
+  },
+  "homepage": "https://github.com/gkawin/metrolife-pharmacy#readme",
+  "devDependencies": {
+    "postcss-import": "^15.1.0",
+    "tailwindcss": "^3.2.7"
+  },
+  "dependencies": {
+    "autoprefixer": "^10.4.13",
+    "postcss-cli": "^10.1.0"
+  }
+}
