@@ -10,7 +10,6 @@
               pharmacist speaks your language & honours your values.
               Author: Kawin Glomjai"
     />
-    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
     <link rel="stylesheet" href="dist/css/main.css" />
     <meta name="theme-color" content="#FFFFFF" />
     <link
@@ -60,7 +59,20 @@
 
       .material-symbols-outlined {
         font-variation-settings: "FILL" 1, "wght" 700, "GRAD" 200, "opsz" 48;
-        color: rgba(12, 29, 92, 1);
+      }
+
+      .datepicker-input::-webkit-calendar-picker-indicator {
+        position: absolute;
+        right: 0;
+        top: 0;
+        background: transparent;
+        color: transparent;
+        width: 100%;
+        height: 100%;
+        z-index: 2;
+        margin: 0;
+        padding: 0;
+        cursor: pointer;
       }
     </style>
   </head>
@@ -111,7 +123,7 @@
           <div
             class="bg-white flex flex-col justify-between shadow border border-solid border-gray-100 rounded p-4 hover:-translate-y-1 cursor-pointer duration-200 ease-in-out"
           >
-            <span class="material-symbols-outlined text-4xl">
+            <span class="material-symbols-outlined text-4xl text-blue-700">
               hourglass_disabled
             </span>
             <p class="text-sm text-gray-700">Personalized Service, No Wait.</p>
@@ -119,13 +131,17 @@
           <div
             class="bg-white flex flex-col justify-between shadow border border-solid border-gray-100 rounded p-4 hover:-translate-y-1 cursor-pointer duration-200 ease-in-out"
           >
-            <span class="material-symbols-outlined text-4xl"> vaccines </span>
+            <span class="material-symbols-outlined text-4xl text-blue-700">
+              vaccines
+            </span>
             <p class="text-sm text-gray-700">COVID-19 & Other Vaccinatios</p>
           </div>
           <div
             class="bg-white flex flex-col justify-between shadow border border-solid border-gray-100 rounded p-4 hover:-translate-y-1 cursor-pointer duration-200 ease-in-out"
           >
-            <span class="material-symbols-outlined text-4xl"> medication </span>
+            <span class="material-symbols-outlined text-4xl text-blue-700">
+              medication
+            </span>
             <p class="text-sm text-gray-700">
               Blister Packaging & Medication Reviews
             </p>
@@ -133,7 +149,7 @@
           <div
             class="bg-white flex flex-col justify-between shadow border border-solid border-gray-100 rounded p-4 hover:-translate-y-1 cursor-pointer duration-200 ease-in-out"
           >
-            <span class="material-symbols-outlined text-4xl">
+            <span class="material-symbols-outlined text-4xl text-blue-700">
               blood_pressure
             </span>
             <p class="text-sm text-gray-700">
@@ -143,7 +159,9 @@
           <div
             class="bg-white flex flex-col justify-between shadow border border-solid border-gray-100 rounded p-4 hover:-translate-y-1 cursor-pointer duration-200 ease-in-out"
           >
-            <span class="material-symbols-outlined text-4xl"> pill </span>
+            <span class="material-symbols-outlined text-4xl text-blue-700">
+              pill
+            </span>
             <p class="text-sm text-gray-700">
               Vitamins supplements & Herbal products
             </p>
@@ -151,7 +169,7 @@
           <div
             class="bg-white flex flex-col justify-between shadow border border-solid border-gray-100 rounded p-4 hover:-translate-y-1 cursor-pointer duration-200 ease-in-out"
           >
-            <span class="material-symbols-outlined text-4xl">
+            <span class="material-symbols-outlined text-4xl text-blue-700">
               monitor_heart
             </span>
             <p class="text-sm text-gray-700">
@@ -161,7 +179,7 @@
           <div
             class="bg-white flex flex-col justify-between shadow border border-solid border-gray-100 rounded p-4 hover:-translate-y-1 cursor-pointer duration-200 ease-in-out"
           >
-            <span class="material-symbols-outlined text-4xl">
+            <span class="material-symbols-outlined text-4xl text-blue-700">
               prescriptions
             </span>
             <p class="text-sm text-gray-700">
@@ -171,7 +189,7 @@
           <div
             class="bg-white flex flex-col justify-between shadow border border-solid border-gray-100 rounded p-4 hover:-translate-y-1 cursor-pointer duration-200 ease-in-out"
           >
-            <span class="material-symbols-outlined text-4xl">
+            <span class="material-symbols-outlined text-4xl text-blue-700">
               local_shipping
             </span>
             <p class="text-sm text-gray-700">
@@ -234,11 +252,15 @@
             />
           </figure>
 
-          <form class="px-4">
+          <form
+            class="px-4"
+            action="https://formsubmit.co/g.kawin@live.com"
+            method="post"
+          >
             <div class="relative z-0 w-full mb-6 group">
               <input
                 type="email"
-                name="floating_email"
+                name="email"
                 id="floating_email"
                 class="block py-2.5 px-0 w-full text-sm text-white bg-transparent border-0 border-b-2 border-white focus:border-gray-400 appearance-none focus:outline-none focus:ring-0 peer"
                 placeholder=" "
@@ -256,7 +278,7 @@
               <div class="relative z-0 w-full mb-6 group">
                 <input
                   type="text"
-                  name="floating_first_name"
+                  name="first_name"
                   id="floating_first_name"
                   class="block py-2.5 px-0 w-full text-sm text-white bg-transparent border-0 border-b-2 border-white focus:border-gray-400 appearance-none focus:outline-none focus:ring-0 peer"
                   placeholder=" "
@@ -272,7 +294,7 @@
               <div class="relative z-0 w-full mb-6 group">
                 <input
                   type="text"
-                  name="floating_last_name"
+                  name="last_name"
                   id="floating_last_name"
                   class="block py-2.5 px-0 w-full text-sm text-white bg-transparent border-0 border-b-2 border-white focus:border-gray-400 appearance-none focus:outline-none focus:ring-0 peer"
                   placeholder=" "
@@ -291,8 +313,7 @@
                 <input
                   type="text"
                   inputmode="numeric"
-                  pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
-                  name="floating_phone"
+                  name="phone"
                   id="floating_phone"
                   class="block py-2.5 px-0 w-full text-sm text-white bg-transparent border-0 border-b-2 border-white focus:border-gray-400 appearance-none focus:outline-none focus:ring-0 peer"
                   placeholder=" "
@@ -307,10 +328,39 @@
               </div>
             </div>
             <div class="relative z-0 w-full mb-6 group">
+              <div class="relative z-0 w-full mb-6 group">
+                <div
+                  class="grid relative"
+                  style="grid-template-columns: 30px 1fr"
+                >
+                  <span
+                    class="material-symbols-outlined inline-block self-center text-white text-sm cursor-pointer"
+                  >
+                    calendar_month
+                  </span>
+                  <input
+                    type="date"
+                    name="appointment_date"
+                    id="floating_appointment_date"
+                    class="datepicker-input block py-2.5 px-0 w-full text-sm text-white bg-transparent border-0 border-b-2 border-white focus:border-gray-400 appearance-none focus:outline-none focus:ring-0 peer"
+                    placeholder=" "
+                    required
+                  />
+                </div>
+                <label
+                  for="floating_appointment_date"
+                  class="peer-focus:font-medium absolute text-sm text-white peer-focus:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+                >
+                  Select Date
+                </label>
+              </div>
+            </div>
+            <div class="relative z-0 w-full mb-6 group">
               <label for="message" class="block mb-2 text-sm text-white">
                 Let us know what you need
               </label>
               <textarea
+                name="message_or_symptoms"
                 id="message"
                 rows="4"
                 class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500"
@@ -361,4 +411,9 @@
 
     <!-- End Footer -->
   </body>
+  <script>
+    const datepicker = document.querySelector("#floating_appointment_date");
+    datepicker.valueAsDate = new Date();
+    datepicker.setAttribute("min", new Date().toISOString().split("T")[0]);
+  </script>
 </html>
