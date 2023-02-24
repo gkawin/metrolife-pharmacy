@@ -50,13 +50,6 @@
         background-repeat: no-repeat;
         box-shadow: inset 0 0 0 99999px rgba(0, 0, 0, 0.5);
       }
-      .bg-primary {
-        background-color: rgba(12, 29, 92, 1);
-      }
-      .text-primary {
-        color: rgba(12, 29, 92, 1);
-      }
-
       .material-symbols-outlined {
         font-variation-settings: "FILL" 1, "wght" 700, "GRAD" 200, "opsz" 48;
       }
@@ -114,7 +107,7 @@
     <!-- Products & services section -->
     <section id="our-services" class="bg-gray-50">
       <div class="mx-auto max-w-2xl py-32 lg:py-48">
-        <h2 class="text-4xl text-center mb-10 font-semibold">
+        <h2 class="text-4xl text-center mb-10 font-semibold text-secondary">
           Products & Services
         </h2>
         <div
@@ -123,7 +116,7 @@
           <div
             class="bg-white flex flex-col justify-between shadow border border-solid border-gray-100 rounded p-4 hover:-translate-y-1 cursor-pointer duration-200 ease-in-out"
           >
-            <span class="material-symbols-outlined text-4xl text-blue-700">
+            <span class="material-symbols-outlined text-4xl text-secondary">
               hourglass_disabled
             </span>
             <p class="text-sm text-gray-700">Personalized Service, No Wait.</p>
@@ -131,7 +124,7 @@
           <div
             class="bg-white flex flex-col justify-between shadow border border-solid border-gray-100 rounded p-4 hover:-translate-y-1 cursor-pointer duration-200 ease-in-out"
           >
-            <span class="material-symbols-outlined text-4xl text-blue-700">
+            <span class="material-symbols-outlined text-4xl text-secondary">
               vaccines
             </span>
             <p class="text-sm text-gray-700">COVID-19 & Other Vaccinatios</p>
@@ -139,7 +132,7 @@
           <div
             class="bg-white flex flex-col justify-between shadow border border-solid border-gray-100 rounded p-4 hover:-translate-y-1 cursor-pointer duration-200 ease-in-out"
           >
-            <span class="material-symbols-outlined text-4xl text-blue-700">
+            <span class="material-symbols-outlined text-4xl text-secondary">
               medication
             </span>
             <p class="text-sm text-gray-700">
@@ -149,7 +142,7 @@
           <div
             class="bg-white flex flex-col justify-between shadow border border-solid border-gray-100 rounded p-4 hover:-translate-y-1 cursor-pointer duration-200 ease-in-out"
           >
-            <span class="material-symbols-outlined text-4xl text-blue-700">
+            <span class="material-symbols-outlined text-4xl text-secondary">
               blood_pressure
             </span>
             <p class="text-sm text-gray-700">
@@ -159,7 +152,7 @@
           <div
             class="bg-white flex flex-col justify-between shadow border border-solid border-gray-100 rounded p-4 hover:-translate-y-1 cursor-pointer duration-200 ease-in-out"
           >
-            <span class="material-symbols-outlined text-4xl text-blue-700">
+            <span class="material-symbols-outlined text-4xl text-secondary">
               pill
             </span>
             <p class="text-sm text-gray-700">
@@ -169,7 +162,7 @@
           <div
             class="bg-white flex flex-col justify-between shadow border border-solid border-gray-100 rounded p-4 hover:-translate-y-1 cursor-pointer duration-200 ease-in-out"
           >
-            <span class="material-symbols-outlined text-4xl text-blue-700">
+            <span class="material-symbols-outlined text-4xl text-secondary">
               monitor_heart
             </span>
             <p class="text-sm text-gray-700">
@@ -179,7 +172,7 @@
           <div
             class="bg-white flex flex-col justify-between shadow border border-solid border-gray-100 rounded p-4 hover:-translate-y-1 cursor-pointer duration-200 ease-in-out"
           >
-            <span class="material-symbols-outlined text-4xl text-blue-700">
+            <span class="material-symbols-outlined text-4xl text-secondary">
               prescriptions
             </span>
             <p class="text-sm text-gray-700">
@@ -189,7 +182,7 @@
           <div
             class="bg-white flex flex-col justify-between shadow border border-solid border-gray-100 rounded p-4 hover:-translate-y-1 cursor-pointer duration-200 ease-in-out"
           >
-            <span class="material-symbols-outlined text-4xl text-blue-700">
+            <span class="material-symbols-outlined text-4xl text-secondary">
               local_shipping
             </span>
             <p class="text-sm text-gray-700">
@@ -379,24 +372,134 @@
     </section>
     <!-- End Doctor Appointment form -->
     <!-- Start Contact Us -->
-    <section id="contact-up" class="relative overflow-hidden">
+    <section id="contact-up" class="relative overflow-hidden bg-gray-50">
       <div class="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
-        <h2 class="text-4xl text-center p-4">Contact Us</h2>
-        <h3>Metrolife Phamarcy</h3>
-        <p></p>
+        <h2 class="text-4xl text-center p-4 font-semibold text-secondary">
+          Contact Us
+        </h2>
+        <iframe
+          class="w-full h-full"
+          width="1024"
+          height="1024"
+          id="gmap_canvas"
+          src="https://maps.google.com/maps?q=Metrolife%20Pharmacy&t=&z=15&ie=UTF8&iwloc=&output=embed&libraries=geometry,places"
+          frameborder="0"
+          scrolling="no"
+          marginheight="0"
+          marginwidth="0"
+        ></iframe>
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-4">
+          <div class="py-4 px-4 md:px-0">
+            <h3 class="text-2xl mb-4" role="heading">Metrolife Pharmacy</h3>
+            <p data-route="address" class="leading-loose text-gray-500">
+              11018 126A St #107, Surrey, BC V3V 0G1
+            </p>
+            <p class="mt-4 text-blue-500">
+              <a
+                role="link"
+                class="block cursor-pointer"
+                href="tel:16044469692"
+              >
+                (604) 446 9692
+              </a>
+              <a
+                role="link"
+                class="block cursor-pointer"
+                href="tel:16049512011"
+              >
+                (604) 951 2011
+              </a>
+            </p>
+          </div>
+          <div class="py-4 px-4 md:px-0" id="operationHours">
+            <h3 role="heading" class="text-2xl mb-4">Operation Hours</h3>
+            <div class="flex flex-row">
+              <span id="operating-today" class="mr-4 text-gray-500">
+                Operating Today
+              </span>
+              <details
+                id="operation-details"
+                class="flex cursor-pointer text-gray-500"
+              >
+                <summary class="text-blue-500">09:00 AM - 5:00 PM</summary>
+                <table
+                  class="border-collapse w-full border border-slate-400 text-sm shadow-sm"
+                >
+                  <tr id="mon" data-day="1" class="text-slate-500">
+                    <td class="border border-slate-300 p-4 text-slate-500">
+                      Mon
+                    </td>
+                    <td class="border border-slate-300 p-4 text-slate-500">
+                      9:00 AM - 5:00 PM
+                    </td>
+                  </tr>
+                  <tr id="tue" data-day="2" class="text-slate-500">
+                    <td class="border border-slate-300 p-4 text-slate-500">
+                      Tue
+                    </td>
+                    <td class="border border-slate-300 p-4 text-slate-500">
+                      9:00 AM - 5:00 PM
+                    </td>
+                  </tr>
+                  <tr id="wed" data-day="3" class="text-slate-500">
+                    <td class="border border-slate-300 p-4">Wed</td>
+                    <td class="border border-slate-300 p-4">
+                      9:00 AM - 5:00 PM
+                    </td>
+                  </tr>
+                  <tr id="thu" data-day="4" class="text-slate-500">
+                    <td class="border border-slate-300 p-4">Thu</td>
+                    <td class="border border-slate-300 p-4">
+                      9:00 AM - 5:00 PM
+                    </td>
+                  </tr>
+                  <tr id="fri" data-day="5" class="text-slate-500">
+                    <td class="border border-slate-300 p-4">Fri</td>
+                    <td class="border border-slate-300 p-4">Closed</td>
+                  </tr>
+                  <tr id="sat" data-day="6" class="text-slate-500">
+                    <td class="border border-slate-300 p-4">Sat</td>
+                    <td class="border border-slate-300 p-4 text-slate-500">
+                      9:00 AM - 5:00 PM
+                    </td>
+                  </tr>
+                  <tr id="sun" data-day="0" class="text-slate-500">
+                    <td class="border border-slate-300 p-4">Sun</td>
+                    <td class="border border-slate-300 p-4">
+                      9:00 AM - 5:00 PM
+                    </td>
+                  </tr>
+                </table>
+              </details>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
     <!-- End Contact Us -->
     <!-- Start Footer -->
 
-    <footer class="p-4 bg-primary flex justify-center">
-      <span class="text-sm text-gray-300">
-        <span>© 2023</span>
+    <footer class="p-6 bg-primary">
+      <div class="text-gray-300 text-center p-4">
+        © 2023
         <a href="https://metrolifepharmacy.ca" class="hover:underline">
           Metrolife Pharmacy
         </a>
         <span>. All Rights Reserved.</span>
-      </span>
+      </div>
+      <div class="text-gray-300 text-center text-xs">
+        Made and Designed by
+        <a
+          href="https://www.linkedin.com/in/gkawin/"
+          role="link"
+          aria-label="Kawin Glomjai's Github"
+          rel="noopener noreferrer"
+          target="_blank"
+          class="font-semibold underline"
+        >
+          Kawin Glomjai
+        </a>
+      </div>
       <!-- <ul class="flex flex-wrap items-center mt-3 text-sm text-gray-300"> -->
       <!-- <li>
           <a href="#doctor-appointment" class="mr-4 hover:underline md:mr-6">
@@ -413,7 +516,30 @@
   </body>
   <script>
     const datepicker = document.querySelector("#floating_appointment_date");
-    datepicker.valueAsDate = new Date();
-    datepicker.setAttribute("min", new Date().toISOString().split("T")[0]);
+    const operationDetails = document.querySelector("#operation-details");
+    const lblOperatingToday = document.querySelector("#operating-today");
+
+    document.addEventListener("DOMContentLoaded", function () {
+      datepicker.valueAsDate = new Date();
+      datepicker.setAttribute("min", new Date().toISOString().split("T")[0]);
+
+      const today = new Date();
+      const day = today.getDay();
+      const hour = today.getHours();
+      const dayInTable = document.querySelector(`tr[data-day="${day}"]`);
+      dayInTable.setAttribute("class", "font-semibold text-black");
+      if (day === 5) {
+        document.querySelector("summary").textContent = "We are closed today";
+      } // Friday
+    });
+
+    operationDetails.addEventListener("toggle", function (e) {
+      const isOpen = e.target.open;
+      if (isOpen) {
+        lblOperatingToday.setAttribute("class", "hidden");
+      } else {
+        lblOperatingToday.setAttribute("class", "mr-4 text-gray-500");
+      }
+    });
   </script>
 </html>
